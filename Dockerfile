@@ -1,6 +1,6 @@
 FROM php:7.4-cli-alpine
 RUN apk update && apk upgrade
-
+# RUN apk add curl-dev openssl-dev # ssl
 # Clone project repository.
 RUN apk add --no-cache git
 WORKDIR /opt/mongodb-php-gui
